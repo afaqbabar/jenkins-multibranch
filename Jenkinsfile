@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                sh 'ls -la'
+                sh 'ls -la /'
             } 
         
         }
