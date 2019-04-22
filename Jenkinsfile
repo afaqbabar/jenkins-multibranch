@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-                sh 'echo Hi from Source Stage'
+                sh 'ls -la'
             } 
         
         }
