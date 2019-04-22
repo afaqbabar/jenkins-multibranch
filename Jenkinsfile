@@ -1,5 +1,12 @@
 pipeline {
     agent any
+	triggers {
+        git(
+            triggerOnPush: true,
+            triggerOnMergeRequest: true
+            )
+    }
+
     stages {
         stage('Source') {
             steps {
