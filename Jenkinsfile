@@ -1,10 +1,7 @@
 pipeline {
     agent any
 	triggers {
-        githubPush(
-            triggerOnPush: true,
-            triggerOnMergeRequest: true
-            )
+        githubPush()
     }
 
     stages {
